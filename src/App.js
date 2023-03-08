@@ -13,7 +13,7 @@ function App() {
   return (
     <> 
   <Header />
-    <Routes>
+    <Routes>      
       <Route exact path="/" element={<Home/>}/>
       <Route exact path="/about" element={<About/>}/>
     </Routes>

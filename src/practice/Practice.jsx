@@ -6,7 +6,7 @@ const Practice = () =>{
 const[data, setData] = useState([])
 
 
-
+        
 //using axios
 useEffect(() => {
     const fetchApi = async () =>{
