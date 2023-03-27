@@ -15,7 +15,9 @@ const Movies = () =>{
     
     return(
         <div className="movies">
-
+            <form>
+                
+            </form>
         </div>
     )
 }
