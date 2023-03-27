@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 const Movies = () =>{
-useEffect(()=>{
+
     fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20of%20thr',{
         method: 'GET',
         headers: {
@@ -11,7 +11,7 @@ useEffect(()=>{
     },[])
     .then(res => console.log(res.json()))
     .catch(err => console.log(err))
-})
+
     
     return(
         <div className="movies">
