@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 
 const Movies = () =>{
 
+    const[endPoint, setEndPoints] = useState('')
+
     fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20of%20thr',{
         method: 'GET',
         headers: {
@@ -12,11 +14,16 @@ const Movies = () =>{
     .then(res => console.log(res.json()))
     .catch(err => console.log(err))
 
+    const onChagneHandler = (e) =>{
+        setEndPoints(e.target.value)
+
+    }
     
     return(
         <div className="movies">
             <form>
-                
+                <input value={endPoint} onChange={onChagneHandler} />
+                <button type="submit">submit</button>
             </form>
         </div>
     )
