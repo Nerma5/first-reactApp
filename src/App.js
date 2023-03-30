@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import FetchData from "./FetchData";
 import Practice from "./Practice";
+import Movies from './Movies'
 function App() {
 
   return (
@@ -9,7 +10,7 @@ function App() {
 
       {/* <FetchData /> */}
       {/* <Practice /> */}
-    
+    <Movies />
     </div>
   );
 }
