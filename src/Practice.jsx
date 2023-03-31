@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-
+import './practice.css'
 
 const Practice = () =>{
 const[types, setTypes] = useState([])
@@ -15,7 +15,8 @@ useEffect(()=>{
             {types.length > 0 && (
                 <ul>
                     {types.map(type =>(
-                        <li key={type.id}>{type.name}</li>
+                        <li key={type.id}>{type.email}</li>
+                        
                     ))}
                 </ul>
             )}
