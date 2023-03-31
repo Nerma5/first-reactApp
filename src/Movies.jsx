@@ -4,6 +4,10 @@ const Movies = () =>{
 
     const[endPoint, setEndPoints] = useState('')
 
+//tells us that container is just an empty array
+    const[container, setContainers] = useState([])
+
+
     fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20of%20thr',{
         method: 'GET',
         headers: {
@@ -12,18 +16,24 @@ const Movies = () =>{
         }
     },[])
     .then(res => console.log(res.json()))
+    //this data above is every data from api 
+    .then(data => {setContainers(data)})
     .catch(err => console.log(err))
 
     const onChagneHandler = (e) =>{
         setEndPoints(e.target.value)
 
     }
+
+    const submitHandler = e =>{
+        e.preventDefault()
+    }
     
     return(
         <div className="movies">
             <form>
                 <input value={endPoint} onChange={onChagneHandler} />
-                <button type="submit">submit</button>
+                <button type="submit" onClick={submitHandler}>submit</button>
             </form>
         </div>
     )
