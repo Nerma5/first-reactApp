@@ -1,14 +1,33 @@
 import React, {useState, useEffect} from "react";
 
 const Movies = () =>{
-const[endPoint, setEndPoint]= useState('')
+    const http = require('https');
 
-useEffect(()=>{
-    fetch('https://moviesminidatabase.p.rapidapi.com/movie/id/%7Bmovie_id%7D/cast/')
-    .then(res => console.log(res))
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
-},[])
+    const options = {
+        method: 'GET',
+        hostname: 'online-movie-database.p.rapidapi.com',
+        port: null,
+        path: '/auto-complete?q=game%20of%20thr',
+        headers: {
+            'X-RapidAPI-Key': 'bca2c254demsh6a0091815b9b001p1719fejsn3f06a878686c',
+            'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
+        }
+    };
+    
+    const req = http.request(options, function (res) {
+        const chunks = [];
+    
+        res.on('data', function (chunk) {
+            chunks.push(chunk);
+        });
+    
+        res.on('end', function () {
+            const body = Buffer.concat(chunks);
+            console.log(body.toString());
+        });
+    });
+    
+    req.end();
     return(
         <div className="movies">
 
