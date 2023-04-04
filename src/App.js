@@ -8,8 +8,8 @@ const [name, setName] = useState("nerma")
     <div className="App">
       {/* <h1>Hello react</h1> */}
       {/* <CreatTweet />
-      <TweetList name={name} />
-      <TweetList /> */}
+      <TweetList name={name} /> */}
+      <TweetList />
       <FetchData />
     
     </div>
