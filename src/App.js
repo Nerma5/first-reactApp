@@ -1,7 +1,6 @@
 
 import React, {useState} from "react";
 import FetchData from "./FetchData";
-//using states 06:37
 
 function App() {
 const [name, setName] = useState("nerma")
