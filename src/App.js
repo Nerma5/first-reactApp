@@ -1,14 +1,15 @@
 // import logo from './logo.svg';
 // import './App.css';
-import './components/Header/header.js'
-import Header from './components/Header/header.js';
-import Main from './components/Main/main.js';
+import Tweet from "./components/Tweet";
+import CreatTweet from "./components/CreatTweet";
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <h1>Hello react</h1>
+      <CreatTweet />
+      <Tweet/>
     </div>
   );
 }
