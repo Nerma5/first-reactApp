@@ -4,7 +4,7 @@ import Tweet from "./Tweet";
 const TweetList = () =>{
     return (
         <div className="tweet-list">
-            <Tweet />
+            <Tweet />  
     </div>
     )
 
