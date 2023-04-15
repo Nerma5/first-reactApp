@@ -3,11 +3,10 @@ import React, {useState} from "react";
 import FetchData from "./FetchData";
 
 function App() {
-const [name, setName] = useState("nerma")
+
   return (
     <div className="App">
 
-      <TweetList />
       <FetchData />
     
     </div>
