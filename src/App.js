@@ -7,13 +7,12 @@ import React, {useState} from "react";
 
 
 function App() {
-
+const [name, setName] = useState("nerma")
   return (
     <div className="App">
       <h1>Hello react</h1>
       <CreatTweet />
-      <TweetList />
-      <TweetList />
+      <TweetList name={name} />
       <TweetList />
       <br />
       <br />
