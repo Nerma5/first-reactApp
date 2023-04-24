@@ -1,7 +1,4 @@
 
-// import CreatTweet from "./components/CreatTweet";
-// import Tweet from "./components/Tweet";
-// import TweetList from "./components/TweetList";
 import React, {useState} from "react";
 import FetchData from "./FetchData";
 //using states 06:37
