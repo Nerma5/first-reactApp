@@ -12,7 +12,13 @@ useEffect(()=>{
 },[])
     return(
         <div className="practice">
-
+            {types.length > 0 && (
+                <ul>
+                    {types.map(type =>(
+                        <li key={type.id}>{type.name}</li>
+                    ))}
+                </ul>
+            )}
         </div>
     )
 }
