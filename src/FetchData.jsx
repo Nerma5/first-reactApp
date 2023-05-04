@@ -17,6 +17,7 @@ const FetchData = () =>{
                     {user.map(user =>(
                         <tr key={user.id}>
                             <th>{user.name}</th></tr>
+                            
                     ))}
                 </table>
             )}
