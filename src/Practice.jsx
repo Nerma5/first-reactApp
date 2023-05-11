@@ -10,7 +10,7 @@ const Practice = () =>{
         .then(res => res.json())
         .then(data => {setComments(data)})
         .catch(err => console.log(err))
-    })
+    },[])
 
     return(
         <div className="practice">
