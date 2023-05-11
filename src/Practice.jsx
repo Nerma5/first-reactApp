@@ -17,7 +17,7 @@ const Practice = () =>{
                 {comments.length > 0 && (
                     <ul>
                         {comments.map(comment =>(
-                            <li key={comment.id}></li>
+                            <li key={comment.id}>{comment.name}</li>
                         ))}
                     </ul>
                 )}
