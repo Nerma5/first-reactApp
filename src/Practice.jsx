@@ -14,7 +14,13 @@ const Practice = () =>{
 
     return(
         <div className="practice">
-
+                {comments.length > 0 && (
+                    <ul>
+                        {comments.map(comment =>(
+                            <li key={comment.id}></li>
+                        ))}
+                    </ul>
+                )}
         </div>
     )
 }
