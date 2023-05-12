@@ -15,7 +15,7 @@ const [name, setName] = useState("nerma")
       <TweetList name={name} />
       <TweetList /> */}
       <FetchData />
-      {/* <button>Click</button> */}
+    
     </div>
   );
 }
