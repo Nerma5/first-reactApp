@@ -3,6 +3,7 @@
 // import Tweet from "./components/Tweet";
 // import TweetList from "./components/TweetList";
 import React, {useState} from "react";
+import FetchData from "./FetchData";
 //using states 06:37
 
 function App() {
@@ -13,6 +14,7 @@ const [name, setName] = useState("nerma")
       {/* <CreatTweet />
       <TweetList name={name} />
       <TweetList /> */}
+      <FetchData />
       {/* <button>Click</button> */}
     </div>
   );
