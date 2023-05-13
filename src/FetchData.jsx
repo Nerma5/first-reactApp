@@ -8,7 +8,6 @@ useEffect(()=>{
     .then(data => {SetPost(data)})
     .catch(err => console.log(err))
 },[])
-
     return(
         <div className="fetch">
             {post.length > 0 && (
