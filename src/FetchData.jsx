@@ -8,14 +8,17 @@ const FetchData = () =>{
         .then(data => {setUser(data)})
         .catch(err => console.log(err))
     }, [])
+
+    
     return(
         <div>
             {user.length > 0 && (
-                <ul>
+                <table>
                     {user.map(user =>(
-                        <li key={user.id}>{user.name}</li>
+                        <tr key={user.id}>
+                            <th>{user.name}</th></tr>
                     ))}
-                </ul>
+                </table>
             )}
         </div>
     )
