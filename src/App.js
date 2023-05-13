@@ -10,14 +10,12 @@ function App() {
 const [name, setName] = useState("nerma")
   return (
     <div className="App">
-      <h1>Hello react</h1>
-      <CreatTweet />
+      {/* <h1>Hello react</h1> */}
+      {/* <CreatTweet />
       <TweetList name={name} />
-      <TweetList />
-      <br />
-      <br />
+      <TweetList /> */}
 
-      <button>Click</button>
+      {/* <button>Click</button> */}
     </div>
   );
 }
