@@ -1,11 +1,13 @@
 import React,{useState, useEffect} from "react";
-import './practice.css'
+
+
+
 
 const Practice = () =>{
 const[types, setTypes] = useState([])
 
 useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/comments?postId=1")
+    fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(data => {setTypes(data)})
     .catch(err => console.log(err))
@@ -16,7 +18,7 @@ useEffect(()=>{
                 <ul>
                     {types.map(type =>(
                         <li key={type.id}>{type.email}</li>
-                        
+
                     ))}
                 </ul>
             )}
