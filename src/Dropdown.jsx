@@ -9,6 +9,7 @@ const dropHandler = (e) =>{
 }
 
     return(
+        
         <div>
         <label>Choose a color:</label> 
     <select value={drop}  onChange={dropHandler}> 
