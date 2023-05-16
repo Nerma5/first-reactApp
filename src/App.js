@@ -3,14 +3,16 @@ import React, {useState} from "react";
 import FetchData from "./FetchData";
 import Practice from "./Practice";
 import Movies from './Movies'
-import Project from "./Project";
+import Input from "./Input";
+import Dropdown from "./Dropdown";
 
 function App() {
 
   return (
     <div className="App">
     {/* <Movies /> */}
-    <Project />
+    <Input />
+    <Dropdown />
     </div>
   );
 }
