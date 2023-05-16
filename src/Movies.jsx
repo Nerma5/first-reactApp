@@ -22,7 +22,7 @@ useEffect(()=>{
     },[])
     .then(res => {return res.json()})
     //this data above is every data from api 
-    .then(data => {setContainers(data)})
+    .then(data => {setContainers(data.d)})
     .catch(err => console.log(err))
 }
 
@@ -42,6 +42,12 @@ useEffect(()=>{
                 <input value={endPoint} onChange={onChagneHandler} />
                 <button type="submit" onClick={submitHandler}>submit</button>
             </form>
+
+            {container.map((item)=>{
+                return(
+                    <p>{item.l}</p>
+                )
+            })}
         </div>
     )
 }
