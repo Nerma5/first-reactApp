@@ -15,7 +15,7 @@ const Movies = () =>{
             'X-RapidAPI-Host': 'online-movie-database.p.rapidapi.com'
         }
     },[])
-    .then(res => console.log(res.json()))
+    .then(res => {return res.json()})
     //this data above is every data from api 
     .then(data => {setContainers(data)})
     .catch(err => console.log(err))
