@@ -7,7 +7,12 @@ const Movies = () =>{
 //tells us that container is just an empty array
     const[container, setContainers] = useState([])
 
+useEffect(()=>{
 
+}, [endPoint])
+
+    const fetchMe = () =>{
+        
     fetch(`https://online-movie-database.p.rapidapi.com/auto-complete?q=${endPoint}`,{
         method: 'GET',
         headers: {
@@ -19,7 +24,9 @@ const Movies = () =>{
     //this data above is every data from api 
     .then(data => {setContainers(data)})
     .catch(err => console.log(err))
+}
 
+   
     const onChagneHandler = (e) =>{
         setEndPoints(e.target.value)
 
