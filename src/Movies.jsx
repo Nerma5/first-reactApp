@@ -7,6 +7,8 @@ const Movies = () =>{
 //tells us that container is just an empty array
     const[container, setContainers] = useState([])
 
+    const[finalPoint, setFinalPoint] = useState('')
+
 useEffect(()=>{
  fetchMe()
 }, [endPoint])
@@ -34,6 +36,7 @@ useEffect(()=>{
 
     const submitHandler = e =>{
         e.preventDefault()
+        setFinalPoint(endPoint)
     }
     
     return(
