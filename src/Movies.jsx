@@ -8,7 +8,7 @@ const Movies = () =>{
     const[container, setContainers] = useState([])
 
 useEffect(()=>{
-
+ fetchMe()
 }, [endPoint])
 
     const fetchMe = () =>{
