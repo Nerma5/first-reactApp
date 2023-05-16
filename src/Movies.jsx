@@ -45,7 +45,11 @@ useEffect(()=>{
 
             {container.map((item)=>{
                 return(
-                    <p>{item.l}</p>
+                    <div className="rendering">
+                        <img src={item.i.imageUrl} />
+                        <p>{item.l}</p>
+                    </div>
+                    
                 )
             })}
         </div>
