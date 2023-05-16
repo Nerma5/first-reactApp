@@ -8,7 +8,7 @@ const Movies = () =>{
     const[container, setContainers] = useState([])
 
 
-    fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=game%20of%20thr',{
+    fetch(`https://online-movie-database.p.rapidapi.com/auto-complete?q=${endPoint}`,{
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'bca2c254demsh6a0091815b9b001p1719fejsn3f06a878686c',
