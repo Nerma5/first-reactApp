@@ -5,14 +5,16 @@ import Practice from "./Practice";
 import Movies from './Movies'
 import Input from "./Input";
 import Dropdown from "./Dropdown";
+import Login from "./logix";
 
 function App() {
 
   return (
     <div className="App">
     {/* <Movies /> */}
-    <Input />
-    <Dropdown />
+    {/* <Input />
+    <Dropdown /> */}
+    <Login />
     </div>
   );
 }
