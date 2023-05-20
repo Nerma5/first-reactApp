@@ -1,10 +1,8 @@
 
 import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
 import {Link, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
-import Button from "./pages/button";
 import Header from "./pages/header";
 
 
