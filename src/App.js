@@ -1,20 +1,23 @@
 
 import React, {useState} from "react";
-import FetchData from "./FetchData";
-import Practice from "./Practice";
-import Movies from './Movies'
-import Input from "./Input";
-import Dropdown from "./Dropdown";
-import Login from "./logix";
+import { useNavigate } from "react-router-dom";
+import {Link, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Button from "./pages/button";
+import Header from "./pages/header";
+
 
 function App() {
 
   return (
-    <div className="App">
-    {/* <Movies /> */}
-    {/* <Input />
-    <Dropdown /> */}
-    <Login />
+    <div className="App"> 
+  <Header />
+    <Routes>
+      <Route exact path="/" element={<Home/>}/>
+      <Route exact path="/about" element={<About/>}/>/
+
+    </Routes>
     </div>
   );
 }
