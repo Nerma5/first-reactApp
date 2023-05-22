@@ -36,9 +36,8 @@ fetchApi()
                 <p>{product.type}</p>
             </div>
             <div className="price">
-                <p>Price:</p>
+                <h4>Price:</h4>
                 <h2 style={{color: 'green', lineHeight:2}}>{product.price}$</h2>
-
             </div>
         </div>
         )))}

@@ -29,8 +29,6 @@
     object-fit: cover;
 }
 .images{
-    display: inline-block;
-    justify-content: center;    
     max-width: 250px;
     height:300px ;
     margin: 1rem;
