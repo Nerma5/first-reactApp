@@ -25,16 +25,20 @@ fetchApi()
         <div className="mainDiv">
         {data.map((product =>(
         <div className="card">
-                <div key={product.id} className="images">
+            <div key={product.id} className="images">
                     <img src={product.image}></img>
                 </div>
-            <div className="text">
+            <div className="title">
                 <h1>{product.title}</h1>
+                </div>
+            <div className="text">
                 <p>{product.description}</p>
                 <p>{product.type}</p>
-
+            </div>
+            <div className="price">
                 <p>Price:</p>
                 <h2 style={{color: 'green', lineHeight:2}}>{product.price}$</h2>
+
             </div>
         </div>
         )))}
