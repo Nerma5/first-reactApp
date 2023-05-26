@@ -60,3 +60,5 @@ useEffect(()=>{
 }
 
 export default Movies
+
+
