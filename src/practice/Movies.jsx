@@ -43,7 +43,7 @@ useEffect(()=>{
         <div className="movies">
             <form>
                 <input value={endPoint} onChange={onChagneHandler} />
-                <button type="submit" onClick={submitHandler}>submit</button>
+                <button type="submit" onClick={submitHandler}>Submit</button>
             </form>
 
             {container.map((item)=>{

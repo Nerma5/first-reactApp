@@ -13,7 +13,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(175, 254, 47);
+    background-color: rgb(77, 77, 77);
     font-size: 25px;
     padding: 25px;
 }
