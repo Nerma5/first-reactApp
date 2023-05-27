@@ -12,7 +12,7 @@ const Header = () =>{
                     return {
                             fontWeight: isActive ? "bold" : "",
                             color: isPending ? "red" : "black",
-                                                } } }>Home</NavLink></li>
+                                                            } } }>Home</NavLink></li>
                     <li><NavLink to= '/about'>About</NavLink></li>
                     <li><NavLink to='/contact-us'>Contact</NavLink></li>
                     <li><NavLink to='/join-us'>Join us</NavLink></li>
