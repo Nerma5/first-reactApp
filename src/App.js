@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Header from "./pages/header";
 import Practice from "./practice/Practice";
 import axios from "axios";
+import Dropdown from "./practice/Dropdown";
 
 function App() {
 

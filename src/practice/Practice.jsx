@@ -32,6 +32,9 @@ fetchApi()
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
                 <p>{product.type}</p>
+
+                <p>Price:</p>
+                <h2 style={{color: 'green', lineHeight:2}}>{product.price}$</h2>
             </div>
         </div>
         )))}
