@@ -1,25 +1,38 @@
+import axios from "axios";
 import React,{useState, useEffect} from "react";
-
+import './practice.css'
 
 const Practice = () =>{
-const[types, setTypes] = useState([])
+const[data, setData] = useState([])
 
-useEffect(()=>{
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then(res => res.json())
-    .then(data => {setTypes(data)})
-    .catch(err => console.log(err))
-},[])
+
+useEffect(() => {
+    const fetchApi = async () =>{
+        try{
+            const respone = await axios.get('https://fakestoreapi.com/products')
+            setData(respone.data)
+            console.log(respone.data)
+        }catch(err){
+            console.log("Error :", err)
+        }
+    }
+fetchApi()
+}, [])
+
     return(
-        <div className="practice">
-            {types.length > 0 && (
-                <ul>
-                    {types.map(type =>(
-                        <li key={type.id}>{type.email}</li>
-
-                    ))}
-                </ul>
-            )}
+        <div className="mainDiv">
+        {data.map((product =>(
+        <div className="card">
+                <div key={product.id} className="images">
+                    <img src={product.image}></img>
+                </div>
+            <div>
+                <h1>{product.title}</h1>
+                <p>{product.description}</p>
+                <p>{product.type}</p>
+            </div>
+        </div>
+        )))}
         </div>
     )
 }
