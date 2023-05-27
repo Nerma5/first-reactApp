@@ -6,6 +6,8 @@ const Practice = () =>{
 const[data, setData] = useState([])
 
 
+
+//using axios
 useEffect(() => {
     const fetchApi = async () =>{
         try{
@@ -26,7 +28,7 @@ fetchApi()
                 <div key={product.id} className="images">
                     <img src={product.image}></img>
                 </div>
-            <div>
+            <div className="text">
                 <h1>{product.title}</h1>
                 <p>{product.description}</p>
                 <p>{product.type}</p>
