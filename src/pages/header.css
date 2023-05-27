@@ -1,16 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
 .header ul li {
     display: inline;
-    margin: 2rem;
+    justify-content: space-between;
+    margin: 3rem;
 }
 
 .header{
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(175, 254, 47);
     font-size: 25px;
-    text-align: center;
+    padding: 25px;
 }
 
 ul li a{
