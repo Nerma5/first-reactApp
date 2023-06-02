@@ -1,12 +1,12 @@
 
 import React from "react";
-import {Link, Route, Routes } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Header from "./pages/header";
-import Practice from "./practice/Practice";
-import axios from "axios";
-import Dropdown from "./practice/Dropdown";
+// import {Link, Route, Routes } from "react-router-dom";
+// import Home from "./pages/home";
+// import About from "./pages/about";
+// import Header from "./pages/header";
+// import Practice from "./practice/Practice";
+// import axios from "axios";
+// import Dropdown from "./practice/Dropdown";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <Route exact path="/about" element={<About/>}/>
     </Routes> */}
     {/* <Movies /> */}
-    <Practice />
+    {/* <Practice />   */}
     </>
   );
 }
