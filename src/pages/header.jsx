@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Header = () =>{
     return(
         <div className="header">
-            <h4>My new page</h4>
+            <h4>FakeStore</h4>
                 <ul>
                     <li><NavLink to='/' style={({ isActive, isPending }) => {
                     return {
