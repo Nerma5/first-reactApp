@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       {/* <Movies /> */}
       {/* <Practice />   */}
       {/* <Parent /> */}
+      <Button variant="contained">Hello World</Button>
     </>
   );
 }
