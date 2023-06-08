@@ -1,5 +1,4 @@
 import React from "react";
-import MainParent from "./practice/PropsPractice/MainParent";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       {/* <Movies /> */}
       {/* <Practice />   */}
       {/* <Parent /> */}
-      <MainParent/>
     </>
   );
 }
