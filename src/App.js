@@ -1,5 +1,5 @@
 import React from "react";
-import Parent from "./practice/Props/parent";
+import MainParent from "./practice/PropsPractice/MainParent";
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
     </Routes> */}
       {/* <Movies /> */}
       {/* <Practice />   */}
-      <Parent />
+      {/* <Parent /> */}
+      <MainParent/>
     </>
   );
 }
