@@ -1,11 +1,8 @@
-import { Button } from "@mui/material";
 import React from "react";
-
+import Movies from "./practice/Movies";
 function App() {
   return (
     <>
-     <Button>Hello</Button>
-    
     </>
   );
 }
