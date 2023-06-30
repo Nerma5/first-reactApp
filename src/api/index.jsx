@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { createTodo, fetchTodos } from "./api";
+import React, {  useState } from "react";
+import { createTodo } from "./api";
 //CRUD
 
 const ToDoList = () => {
