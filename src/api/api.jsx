@@ -25,3 +25,21 @@ export const createTodo = async (todo) => {
     return null;
   }
 };
+
+export const deleteTodo = async (toDoId) => {
+  try {
+    const respone = await fetch(
+      `https://jsonplaceholder.typicode.com/todos/${toDoId}`,
+      {
+        method: "DELETE",
+      }
+    );
+    if (respone.ok) {
+      return true;
+    } else {
+      throw new Error("error");
+    }
+  } catch (error) {
+    console.error("error", error);
+  }
+};
