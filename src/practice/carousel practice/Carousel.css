@@ -1,0 +1,14 @@
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5%;
+
+}
+.images img{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
